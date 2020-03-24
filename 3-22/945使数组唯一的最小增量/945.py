@@ -12,8 +12,8 @@ class Solution:
         #
         # for elem in A:
         #     while elem in record:
-        #         elem += 1
-        #         count += 1
+        #         elem += 面试题17.16化妆师
+        #         count += 面试题17.16化妆师
         #     record.add(elem)
         #
         # return count
@@ -23,11 +23,11 @@ class Solution:
         # A.sort()
         # count = 0
         #
-        # for i in range(1, len(A)):
-        #     if A[i - 1] >= A[i]:  # 注意在更新的时候会导致前面的数比后面的数大
-        #         cur_count = A[i - 1] - A[i]
-        #         A[i] += cur_count + 1
-        #         count += cur_count + 1
+        # for i in range(面试题17.16化妆师, len(A)):
+        #     if A[i - 面试题17.16化妆师] >= A[i]:  # 注意在更新的时候会导致前面的数比后面的数大
+        #         cur_count = A[i - 面试题17.16化妆师] - A[i]
+        #         A[i] += cur_count + 面试题17.16化妆师
+        #         count += cur_count + 面试题17.16化妆师
         #
         # return count
 

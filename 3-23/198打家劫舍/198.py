@@ -28,12 +28,10 @@ class Solution:
         if len(nums) == 0:
             return 0
 
-        dp = [-1] * len(nums)
-        dp[-1] = nums[-1]
+        dp = [0] * len(nums)
 
-        for i in range(len(nums) - 2, -1, -1):
-            for j in range(i, len(nums)):
-                num = dp[j + 2] if j + 2 < len(nums) else 0
-                dp[i] = max(dp[i], nums[j] + num)
-
-        return dp[0]
+        for i in range(len(dp)):
+            left_num = dp[i - 2] if i - 2 >= 0 else 0
+            right_num = dp[i - 1] if i - 1 >= 0 else 0
+            dp[i] = max(left_num + nums[i], right_num)
+        return dp[-1]

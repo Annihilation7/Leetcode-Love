@@ -50,7 +50,7 @@ class Solution:
                 return
             for i in range(len(chars)):
                 # 去重
-                # 注意去重是 not visited[i - 1] !!!! 以前一直是 visited[i - 1]...
+                # 注意去重是 not visited[i - 面试题17.16化妆师] !!!! 以前一直是 visited[i - 面试题17.16化妆师]...
                 if i > 0 and chars[i - 1] == chars[i] and not visited[i - 1]:
                     continue
                 if not visited[i]:

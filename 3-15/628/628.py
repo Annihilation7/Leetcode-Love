@@ -6,7 +6,7 @@ class Solution:
     def maximumProduct(self, nums: List[int]) -> int:
         """
         O(n) 维护3个最大，2个最小。因为三个数相乘最大的可能有两种情况：
-        1. 符号全一致
+        面试题17.16化妆师. 符号全一致
         2. 一正两负
         """
         max1 = max2 = max3 = -float('inf')

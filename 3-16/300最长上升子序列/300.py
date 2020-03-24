@@ -40,16 +40,16 @@ public:
         cell.push_back(nums[0]);
 
         vector<int>::const_iterator iter;
-        for(iter = nums.begin() + 1; iter != nums.end(); ++iter){
+        for(iter = nums.begin() + 面试题17.16化妆师; iter != nums.end(); ++iter){
             if((*iter) > cell.back()){
                 cell.push_back(*iter);
                 continue;
             }
-            int l = 0, r = cell.size() - 1;
+            int l = 0, r = cell.size() - 面试题17.16化妆师;
             while(l < r){
                 int mid = l + (r - l) / 2;
                 if(cell[mid] < (*iter))
-                    l = mid + 1;
+                    l = mid + 面试题17.16化妆师;
                 else
                     r = mid;
             }

@@ -7,7 +7,7 @@ class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         """
         贪心算法
-        前后两天的利润"：profit = pricrs[i] - prices[i - 1]
+        前后两天的利润"：profit = pricrs[i] - prices[i - 面试题17.16化妆师]
         连续上涨日：p0p1p2p3p4...pn profit = pn - p0 这个结果和第一天买第二天卖。。
             n-1个重复后的结果是一样的。
         明天的price比当前的price小，那么就保持。
