@@ -14,11 +14,11 @@ class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         self.res = []
         self.visited = [False] * len(nums)
-        self.helper(nums, 0, [])
+        self.helper(nums, [])
         return self.res
 
-    def helper(self, nums, idx, cur_res):
-        if idx == len(nums):
+    def helper(self, nums, cur_res):
+        if len(cur_res) == len(nums):
             self.res.append(cur_res[:])
             return
 
@@ -26,7 +26,7 @@ class Solution:
             if not self.visited[i]:
                 cur_res.append(nums[i])
                 self.visited[i] = True
-                self.helper(nums, idx + 1, cur_res)
+                self.helper(nums, cur_res)
                 cur_res.pop()
                 self.visited[i] = False
 
