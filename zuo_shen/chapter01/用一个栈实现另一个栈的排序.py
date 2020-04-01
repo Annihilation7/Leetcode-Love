@@ -14,12 +14,9 @@ class Solution:
 
         while len(stack):
             pop_elem = stack.pop()
-            if len(aux_stack) == 0 or pop_elem <= aux_stack[-1]:
-                aux_stack.append(pop_elem)
-            else:
-                while len(aux_stack) and pop_elem > aux_stack[-1]:
-                    stack.append(aux_stack.pop())
-                aux_stack.append(pop_elem)
+            while len(aux_stack) and pop_elem > aux_stack[-1]:
+                stack.append(aux_stack.pop())
+            aux_stack.append(pop_elem)
 
         # 倒回原栈
         while len(aux_stack):
