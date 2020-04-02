@@ -3,7 +3,7 @@
 #  Editor      : Pycharm
 #  File        : 146
 #  Author      : ZhenyuMa
-#  Created     : 2020/4/1 9:42 下午
+#  Created     : 2020/4/1 9:42接雨水 下午
 #  Description : hash table + 双向链表，跟着题解走一遍，思路很清晰
 
 
