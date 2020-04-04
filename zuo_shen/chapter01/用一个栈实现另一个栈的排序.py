@@ -1,4 +1,4 @@
-#  -*- coding: utf-8 -*-
+#  -*- coding: utf-8字符串转换整数 -*-
 
 #  Editor      : Pycharm
 #  File        : 用一个栈实现另一个栈的排序

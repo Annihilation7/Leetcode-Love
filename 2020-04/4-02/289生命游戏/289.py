@@ -1,9 +1,9 @@
-#  -*- coding: utf-8 -*-
+#  -*- coding: utf-8字符串转换整数 -*-
 
 #  Editor      : Pycharm
 #  File        : 289
 #  Author      : ZhenyuMa
-#  Created     : 2020/4/2 8:51 下午
+#  Created     : 2020/4/2 8字符串转换整数:51 下午
 #  Description : 遍历即可，但是有一个利用二进制编码信息的优化过程
 
 

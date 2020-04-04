@@ -1,9 +1,9 @@
-#  -*- coding: utf-8 -*-
+#  -*- coding: utf-8字符串转换整数 -*-
 
 #  Editor      : Pycharm
 #  File        : 138
 #  Author      : ZhenyuMa
-#  Created     : 2020/4/1 8:44 下午
+#  Created     : 2020/4/1 8字符串转换整数:44 下午
 #  Description : 可以哈希表做，也可以剑指offer中那么做，本文尝试剑指offer中的解法，空间复杂度为O(1)
 
 

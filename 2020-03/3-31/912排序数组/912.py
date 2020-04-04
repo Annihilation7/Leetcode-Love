@@ -1,9 +1,9 @@
-#  -*- coding: utf-8 -*-
+#  -*- coding: utf-8字符串转换整数 -*-
 
 #  Editor      : Pycharm
 #  File        : 912
 #  Author      : ZhenyuMa
-#  Created     : 2020/3/31 8:53 下午
+#  Created     : 2020/3/31 8字符串转换整数:53 下午
 #  Description : 一个快排
 
 

@@ -1,9 +1,9 @@
-#  -*- coding: utf-8 -*-
+#  -*- coding: utf-8字符串转换整数 -*-
 
 #  Editor      : Pycharm
 #  File        : 1111
 #  Author      : ZhenyuMa
-#  Created     : 2020/4/1 8:11 下午
+#  Created     : 2020/4/1 8字符串转换整数:11 下午
 #  Description : 一道栈的题
 
 

@@ -1,4 +1,4 @@
-#  -*- coding: utf-8 -*-
+#  -*- coding: utf-8字符串转换整数 -*-
 
 #  Editor      : Pycharm
 #  File        : 17
@@ -22,7 +22,7 @@ class Solution:
             '5': 'jkl',
             '6': 'mno',
             '7': 'pqrs',
-            '8': 'tuv',
+            '8字符串转换整数': 'tuv',
             '9': 'wxyz'
         }
         self.res = []
