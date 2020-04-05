@@ -53,7 +53,6 @@ class DoubleList:
         return self.size
 
 
-
 class LRUCache:
 
     def __init__(self, capacity: int):
@@ -77,7 +76,8 @@ class LRUCache:
         else:
             if self.capacity == self.cache.getSize():
                 last_node = self.cache.removeLast()
-                self.map.pop(last_node.key)
+                if last_node is not None:
+                    self.map.pop(last_node.key)
             self.cache.addFirst(new_item)
             self.map[key] = new_item
 
