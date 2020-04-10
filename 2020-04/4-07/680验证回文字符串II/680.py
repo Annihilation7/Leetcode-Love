@@ -4,7 +4,7 @@
 #  File        : 680.py
 #  Author      : ZhenyuMa
 #  Created     : 2020/4/10 11:36 下午
-#  Description : 双指针 一个容错
+#  Description : 双指针 一个容错1
 
 
 class Solution:
