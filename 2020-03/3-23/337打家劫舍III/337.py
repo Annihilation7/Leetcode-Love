@@ -8,9 +8,6 @@ class TreeNode:
         self.right = None
 
 
-from typing import List
-
-
 class Solution:
     def rob(self, root: TreeNode) -> int:
         """
