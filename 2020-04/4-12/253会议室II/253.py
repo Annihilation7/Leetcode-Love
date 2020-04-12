@@ -28,4 +28,4 @@ class Solution:
 
 if __name__ == "__main__":
     test = Solution()
-    print(test.minMeetingRooms([])
+    print(test.minMeetingRooms([]))
