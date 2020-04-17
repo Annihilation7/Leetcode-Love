@@ -16,14 +16,18 @@ class Data:
         self._frequency = frequency
 
     def __lt__(self, other):
-        return self.frequency <= other.frequency
+        if self.frequency != other.frequency:
+            return self.frequency < other.frequency
+        return self.word > other.word  # 注意频率相同要按字典序排序，而我最终是从后往前塞元素的，所以要改成>
 
     def __gt__(self, other):
-        return self.frequency >= other.frequency
+        if self.frequency != other.frequency:
+            return self.frequency > other.frequency
+        return self.word < other.word
 
     @property
     def word(self):
-        return self.word
+        return self._word
 
     @property
     def frequency(self):
@@ -46,6 +50,14 @@ class MinHeap:
             self.data[0] = elem
             self._shiftDown(0)
 
+    def removeMin(self):
+        assert self.size > 0
+        self._swap(0, self.size - 1)
+        ret = self.data.pop().word
+        self.size -= 1
+        self._shiftDown(0)
+        return ret
+
     def _left_child(self, idx):
         return idx * 2 + 1
 
@@ -58,7 +70,7 @@ class MinHeap:
     def _shiftUp(self, idx):
         while idx > 0:
             parent_idx = self._parent(idx)
-            if self.data[parent_idx] <= self.data[idx]:
+            if self.data[parent_idx] < self.data[idx]:
                 break
             self._swap(parent_idx, idx)
             idx = parent_idx
@@ -68,7 +80,7 @@ class MinHeap:
             j = self._left_child(idx)
             if j + 1 < self.size and self.data[j + 1] < self.data[j]:
                 j += 1
-            if self.data[idx] <= self.data[j]:
+            if self.data[idx] < self.data[j]:
                 break
             self._swap(idx, j)
             idx = j
@@ -81,4 +93,15 @@ class Solution:
     def topKFrequent(self, words: List[str], k: int) -> List[str]:
         min_heap = MinHeap(k)
 
-        record =
+        record = {}
+        for word in words:
+            record[word] = record.get(word, 0) + 1
+
+        for key, value in record.items():
+            min_heap.add(Data(key, value))
+
+        res = [None] * k
+        for i in range(len(res) - 1, -1, -1):  # 从后往前塞元素
+            res[i] = min_heap.removeMin()
+
+        return res

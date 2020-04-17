@@ -10,6 +10,7 @@
 class Solution:
     def getKthNum(self, alist1, alist2, k):
         m, n = len(alist1), len(alist2)
+        assert 1 <= k <= m + n
         l = max(0, k - n)
         r = min(m, k)
         while l < r:
@@ -25,6 +26,6 @@ class Solution:
 
 if __name__ == "__main__":
     arr1 = [1, 2, 3, 4, 5]
-    arr2 = [-3, -2, -1]
+    arr2 = [2, 3, 4, 5]
     test = Solution()
-    print(test.getKthNum(arr1, arr2, 3))
+    print(test.getKthNum(arr1, arr2, 9))
