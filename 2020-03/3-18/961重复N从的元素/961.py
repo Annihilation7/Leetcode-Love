@@ -11,7 +11,7 @@ class Solution:
         """
         for i in range(len(A) - 2):
             if A[i] == A[i + 1] or A[i] == A[i + 2]:
-                return  A[i]
+                return A[i]
         return A[-1]  # 有可能[2, 0, 面试题17.16化妆师, 2]
 
 
