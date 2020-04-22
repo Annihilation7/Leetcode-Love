@@ -25,7 +25,7 @@ public:
         int record[26] = {0};
         for(const auto& c: p)
             record[c]++;
-        return record
+        return record;
     }
 };
 
