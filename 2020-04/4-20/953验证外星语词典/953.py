@@ -13,7 +13,7 @@ from typing import List
 class Solution:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
         self.record = {k: i for i, k in enumerate(order)}
-        # 验证有序就是遍历一次看相邻即可
+        # 验证有序就是遍历一次看相邻即可，要比4月19号那天的思好很多
         for i in range(1, len(words)):
             if not self._cmp(words[i - 1], words[i]):
                 return False
