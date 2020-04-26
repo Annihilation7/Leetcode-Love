@@ -24,6 +24,6 @@ public:
     	int right_height = helper(root->right);
     	// 回溯的时候求每层树的树高，就两层递归，刚才那个4层递归。。。
     	res = max(res, left_height + right_height);
-    	return 1 + max(left_height, right_height);
+    	return 1 + max(left_height, right_height);  // 当前节点为根的二叉树的树高
     }
 };
