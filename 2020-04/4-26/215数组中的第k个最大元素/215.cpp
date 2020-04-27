@@ -20,7 +20,7 @@ public:
         int lt = left;
         int i = left + 1;
 
-        // 普通的单路快排思想
+        // 普通的单路快排partition思想
         while(i <= right){
             if(nums[i] < target)
                 swap(nums[i++], nums[++lt]);
