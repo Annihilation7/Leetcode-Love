@@ -30,7 +30,7 @@ public:
         for(auto c: record[digits[start_idx]]){
             cur_res += c;
             helper(digits, start_idx + 1, cur_res);
-            cur_res.erase(cur_res.size() - 1, 1);
+            cur_res.erase(cur_res.size() - 1, 1);  // traceback
         }
     }
 };
