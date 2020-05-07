@@ -3,6 +3,7 @@
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
+        // 状态转移方程：dp[i] = min(dp[i], dp[i - coin] + 1)
         vector<int> dp(amount + 1, INT_MAX);
         dp[0] = 0;
 
